@@ -31,5 +31,9 @@
   }
   #description {
     overflow: scroll;
-    height: 10  0px;
+    height: 100px;
+  }
+  img {
+    height: 440px;
+    width: 2px;
   }

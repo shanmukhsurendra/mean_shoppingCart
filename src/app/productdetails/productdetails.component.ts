@@ -8,13 +8,27 @@ import {book} from '../data';
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent implements OnInit {
-i: any;
+i: number;
 book;
+
   constructor(private serve: ServiceService, private route: ActivatedRoute) { }
-//  book = this.serve.getData(i);
+ bookes = this.serve.getData();
   ngOnInit() {
- this.i = this.route.snapshot.paramMap.get('id');
- this.book = this.serve.getbook(this.i);
+ this.i = +this.route.snapshot.paramMap.get('id');
+//  this.book = this.serve.getbook(this.i);
+  }
+  nextpressed() {
+    console.log(this.i)
+    // if(this.i >= this.bookes.length-1) return;
+    this.i += 1;
+    // this.book = this.serve.getbook(this.i);
+    
+  }
+  prevpressed() {
+    // if(this.i >= 0) {
+    this.i -= 1;
+    // this.book = this.serve.getbook(this.i);
+    // }
   }
 
 }
