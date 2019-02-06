@@ -1,7 +1,7 @@
-<div class="container">
-    <!-- Empty cart -->
+<!-- <div class="container">
+    Empty cart
     <div ng-show="cart.items < 1">Your cart is currently empty..</div>
-    <!-- Items in the shopping cart -->
+    Items in the shopping cart
     <div class='cart-products-box'>
       <table class="cart-table">
         <tr ng-hide="cart.items < 1">
@@ -19,7 +19,22 @@
           <td><button ng-click='cart.removeFromCart(item)' class="btn btn-primary">Remove from cart</button></td>
         </tr>
       </table>
-      <!-- total -->
+      total
       <div ng-hide="cart.items < 1" id='totalPrice' class="orange"><b>Total: {{cart.totalCartPrice() | currency:"£"}}</b></div>
     </div>
-  </div>
+  </div> -->
+  <h2 style="text-align:center;">CART</h2>
+  <table id = "customers">
+    <tr>
+      <th>Item details</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+    <!-- <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr> -->
+  </table>

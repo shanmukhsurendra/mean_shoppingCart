@@ -35,6 +35,8 @@ export const book : any = {
        "categories": [
         "Mathematics"
        ],
+       "averageRating": 3.5,
+       "ratingsCount": 4,
        "maturityRating": "NOT_MATURE",
        "allowAnonLogging": true,
        "contentVersion": "1.1.1.0.preview.1",
